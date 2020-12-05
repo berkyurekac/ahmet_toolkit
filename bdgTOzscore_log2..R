@@ -40,13 +40,6 @@ seqinfo(file) <- fileseqinfo
 
 export.bw(file, "SRR4319294_rep1_log2.bw")
 
-## Z-scores
-
-a <- mean(file$score)
-file$score <- file$score/mean(file$score)
-head(file)
-
-export.bw(file, "SX1984_rep3_Zscore.bw")
 
 setwd("/Volumes/miska/Ahmet Berkyurek/sequencing/Hiseq/ollas-rpb9/new_normalisation/substraction")
 
